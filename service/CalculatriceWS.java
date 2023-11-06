@@ -3,7 +3,7 @@ package service;
 
 import jakarta.jws.*;
 
-@WebService
+@WebService(name = "CalculatriceWS")
 public class CalculatriceWS {
     @WebMethod(operationName = "somme")
     public double somme(@WebParam(name = "a") double a, @WebParam(name = "b") double b) {
